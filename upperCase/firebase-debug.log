@@ -1,0 +1,56 @@
+[debug] [2017-12-09T15:56:45.652Z] ----------------------------------------------------------------------
+[debug] [2017-12-09T15:56:45.655Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2017-12-09T15:56:45.656Z] CLI Version:   3.16.0
+[debug] [2017-12-09T15:56:45.656Z] Platform:      linux
+[debug] [2017-12-09T15:56:45.656Z] Node Version:  v6.9.1
+[debug] [2017-12-09T15:56:45.656Z] Time:          Sat Dec 09 2017 16:56:45 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:45.656Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-12-09T15:56:45.670Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-12-09T15:56:45.670Z] > authorizing via signed-in user
+[debug] [2017-12-09T15:56:45.673Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/functions-56465  
+  
+ Sat Dec 09 2017 16:56:45 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:46.504Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-09T15:56:46.506Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/functions-56465/tokens  
+  
+ Sat Dec 09 2017 16:56:46 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:47.167Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'functions-56465'...
+[info] 
+[info] i  deploying functions
+[debug] [2017-12-09T15:56:47.966Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "firebase-admin": "~5.4.2",
+    "firebase-functions": "^0.7.1"
+  },
+  "private": true
+}
+[info] i  functions: ensuring necessary APIs are enabled...
+[debug] [2017-12-09T15:56:47.968Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/cloudfunctions.googleapis.com/projectSettings/functions-56465?view=CONSUMER_VIEW  
+  
+ Sat Dec 09 2017 16:56:47 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:47.969Z] >>> HTTP REQUEST GET https://servicemanagement.googleapis.com/v1/services/runtimeconfig.googleapis.com/projectSettings/functions-56465?view=CONSUMER_VIEW  
+  
+ Sat Dec 09 2017 16:56:47 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:49.127Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-09T15:56:49.171Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: all necessary APIs are enabled
+[debug] [2017-12-09T15:56:49.172Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/functions-56465  
+  
+ Sat Dec 09 2017 16:56:49 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:49.173Z] >>> HTTP REQUEST GET https://apikeys.googleapis.com/v1/projects/functions-56465/apiKeys  
+  
+ Sat Dec 09 2017 16:56:49 GMT+0100 (CET)
+[debug] [2017-12-09T15:56:50.079Z] <<< HTTP RESPONSE 200
+[debug] [2017-12-09T15:56:50.155Z] <<< HTTP RESPONSE 200
